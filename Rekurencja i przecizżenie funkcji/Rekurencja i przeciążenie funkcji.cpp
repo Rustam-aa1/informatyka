@@ -5,12 +5,11 @@ int Silnia(int n) {
     if (n == 1)
         return 1;
     else
-        return n + Silnia(n - 1);
+        return n * Silnia(n - 1);
 }
 
 int main() {
-	int N;
-    int wynik = Silnia(N);
-    cout << "5! = " << wynik << endl;
+    int wynik = Silnia(5);
+    cout << "5! = " << wynik << endl; 
     return 0;
 }
